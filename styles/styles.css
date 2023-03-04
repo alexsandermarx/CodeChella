@@ -25,7 +25,11 @@
 .principal{
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+}
+
+.principal_conteudo{
+    background-image: linear-gradient(#304968, #36C1A0, #4650BD);
 }
 
 .principal_conteiner{
