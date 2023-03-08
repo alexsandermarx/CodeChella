@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap');
 
 .cabecalho{
     background-color: #4650BD;
@@ -10,39 +10,32 @@
     font-size: 20px;
     font-weight: 700;
 }
-
 .cabecalho_navegacao{
     display:flex;
     gap: 20px;
 }
-
 .cabecalho_navegacao_links{
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
-
 .principal{
     display: flex;
     flex-direction: column;
     /* background-color: aquamarine; */
 }
-
 .principal_conteudo{
     background-image: linear-gradient(#304968, #36C1A0, #4650BD);
 }
-
 .principal_conteiner{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-
 .principal_conteiner_imagembanner{
     transform: translate(0%, -45%);
 }
-
 .principal_conteiner_texto{
     position: absolute;
     height: auto;
@@ -54,22 +47,125 @@
     color: white;
     text-decoration: none;
 
-}    
+}
 .principal_comprar_ingresso{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    text-align: center;
+    padding: 64px;
+    justify-content: center;
 }
-
+.principal_comprar_ingresso_imagem{
+    height: 40vh;
+}
+.principal_comprar_ingresso_info{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.principal_comprar_ingresso_info_data_local{
+    font-size: 32px;
+    font-weight: 700;
+}
+.principal_comprar_ingresso_info_texto{
+    width: 30vw;
+    font-size: 20px;
+    font-weight: 500;
+}
+.principal_comprar_ingresso_botao{
+    background-color: #4650BD;
+    color: white;
+    text-decoration: none;
+    width:max-content;
+    align-self: center;
+    padding: 20px;
+}
 .principal_lineup{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 48px;
 }
+.principal_lineup_titulo{
+    color: white;
+    font-family: 'Calistoga', cursive;
+    font-weight: 400;
+    font-size: 64px;
+}
+.principal_lineup_datas{
+    color: white;
+    background-color: #008364;
+    font-family: 'Calistoga', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    width: 450px;
+    text-align: center;
+}
+.principal_lineup_texto{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
 
-.principal_banner_final{
+}
+.principal_lineup_bandas{
     display: flex;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
 }
-
+.principal_lineup_bandas_01{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+.principal_lineup_bandas_02{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+.principal_lineup_bandas_03{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+.principal_banner_final{
+    /* display: flex; */
+    width: 100%;
+    height: 30vh;
+    /* width: 10%; */
+    /* height: auto; */
+    /* overflow: hidden; */
+}
+.principal_banner_final_imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .rodape{
     display: flex;
     flex-direction: row;
@@ -82,23 +178,19 @@
     align-items: center;
 
 }
-
 .rodape_logoRedesSociais{
     display: flex;
     flex-direction: column;
 }
-
 .rodape_logoRedesSociais_logo{
     width: 200px;
 }
-
 .rodape_logoRedesSociais_redessociais{
     font-size: 20px;
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-
 .rodape_informacoes{
     display: flex;
     flex-direction: column;
